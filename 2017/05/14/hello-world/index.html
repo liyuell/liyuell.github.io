@@ -295,30 +295,6 @@
 
 
 
-    <section id="comments">
-    <!--高速版，加载速度快，使用前需测试页面的兼容性-->
-    <div id="SOHUCS" sid="Hello World"></div>
-        <script>
-            (function(){
-                var appid = 'cysXcUQEm',
-                conf = 'prod_726a909befa5b2d9187dc6413e24479a';
-                var doc = document,
-                s = doc.createElement('script'),
-                h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
-                s.type = 'text/javascript';
-                s.charset = 'utf-8';
-                s.src = 'https://assets.changyan.sohu.com/upload/changyan.js?conf= 
-
-'+ conf +'&appid=' + appid;
-                h.insertBefore(s,h.firstChild);
-                window.SCS_NO_IFRAME = true;
-            })()
-        </script>
-    </section>
-
-
-
-
   
   
   
@@ -424,6 +400,14 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">标签1</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
